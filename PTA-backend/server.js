@@ -56,7 +56,7 @@ app.post("/convert", upload.single("pdf"), async (req, res) => {
 
       return res.json({
         message: "Conversion successful",
-        audio: `http://localhost:5000/audio/${audioFile}`,
+        audio: `https://pdt-to-audio-8hzu.vercel.app/audio/${audioFile}`,
       });
     });
 
@@ -72,5 +72,5 @@ app.use("/audio", express.static("audio"));
 // ===== Start Server =====
 const PORT = 5000;
 app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+    console.log(`Server running on https://pdt-to-audio-8hzu.vercel.app:${PORT}`);
 });

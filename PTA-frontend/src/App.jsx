@@ -18,7 +18,7 @@ function App() {
     try {
       setLoading(true);
 
-      const res = await fetch("http://localhost:5000/convert", {
+      const res = await fetch("https://pdt-to-audio-8hzu.vercel.app/convert", {
         method: "POST",
         body: formData,
       });
